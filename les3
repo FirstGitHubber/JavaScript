@@ -1,0 +1,44 @@
+//1.
+
+var arr = [];
+var counter = 3; // исключаем 2, т.к. это очевидно
+while (counter < 101) {
+        var notPrime = false;
+        for (var i = 2; i <= counter; i++) {
+            if (counter % i === 0 && i!==counter) {
+                notPrime = true;
+            }
+        }
+        if (notPrime === false) {
+            arr.push(counter);
+        } counter++;
+    }
+
+console.log('первый вариант решения' + arr);
+
+
+
+
+
+
+//4
+
+var i;
+for ( i = 0; i <= 9; i++){
+     console.log(i);
+    }
+
+
+
+
+
+
+//5
+
+var arr = ['x'];
+console.log(arr);
+for (i = 0; i < 20; i++) {
+    arr.push('x');
+    console.log(arr);
+}
+console.log(arr);
