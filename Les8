@@ -1,0 +1,39 @@
+if (!("a" in window)) {
+    var a = 1;
+}
+alert(a);
+//Выведет Undefinded
+
+
+
+var b = function a(x) {
+    x && a(--x);
+};
+alert(a);
+//Выдаст ошибку
+
+
+function a(x) {
+    return x * 2;
+}
+var a;
+alert(a);
+//Выдаст тело функции
+
+
+
+function b(x, y, a) {
+    arguments[2] = 10;//Присвоение второму параметру
+    alert(a);
+}
+b(1, 2, 3);
+//а=10
+
+
+
+
+function a() {
+    alert(this);
+}
+a.call(null);
+//Все переменные становятся частью объекта окна
